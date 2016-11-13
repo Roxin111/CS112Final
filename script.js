@@ -8,8 +8,13 @@ const Fortune4 = 3;
 const Fortune5 = 4;
 const Fortune6 = 5;
 const Fortune7 = 6;
-const Fortune8 = 7
+const Fortune8 = 7;
 function RandomInt (low,high)
 {
     return Math.floor(Math.random()*(high-low+1)) +low
+}
+function Displayresult ()
+{
+
+
 }
