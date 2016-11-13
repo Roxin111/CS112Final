@@ -19,19 +19,26 @@ function Displayresult ()
     if (Fortunenumber == Fortune1) {
         summary = SESSION_PLAYER_WINS;
         playerWins++;
-    } else if (Fortunenumber == PAPER && computerChoice == ROCK) {
+    } else if (Fortunenumber == Fortune2) {
         summary = SESSION_PLAYER_WINS;
         playerWins++;
-    } else if (Fortunenumber == SCISSORS && computerChoice == PAPER) {
+    } else if (Fortunenumber == Fortune3) {
         summary = SESSION_PLAYER_WINS;
         playerWins++;
-    } else if (Fortunenumber == ROCK && computerChoice == PAPER) {
+    } else if (Fortunenumber == Fortune4) {
         summary = SESSION_COMPUTER_WINS;
         computerWins++;
-    } else if (Fortunenumber == PAPER && computerChoice == SCISSORS) {
+    } else if (Fortunenumber == Fortune5) {
         summary = SESSION_COMPUTER_WINS;
         computerWins++;
-    } else if (Fortunenumber == SCISSORS && computerChoice == ROCK) {
+    } else if (Fortunenumber == Fortune6) {
+        summary = SESSION_COMPUTER_WINS;
+        computerWins++;
+    }else if (Fortunenumber == Fortune7) {
+        summary = SESSION_COMPUTER_WINS;
+        computerWins++;
+    }
+    else if (Fortunenumber == Fortune8) {
         summary = SESSION_COMPUTER_WINS;
         computerWins++;
     }
