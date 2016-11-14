@@ -9,37 +9,45 @@ const Fortune5 = 4;
 const Fortune6 = 5;
 const Fortune7 = 6;
 const Fortune8 = 7;
+
+const displayFortune1 = "A beautiful, smart, and loving person will be coming into your life.";
+const displayFortune2 = "All will go well with your new project.";
+const displayFortune3 = "It is honorable to stand up for what is right, however unpopular it seems.";
+const displayFortune4 = "People find it difficult to resist your persuasive manner.";
+const displayFortune5 = "Success is going from failure to failure without loss of enthusiasm.";
+const displayFortune6 = "Miles are covered one step at a time.";
+const displayFortune7 = "Help! I’m being held prisoner in a chinese bakery!";
+const displayFortune8 = "Don’t just spend time. Invest it.";
+function $(value) {
+    return document.getElementById(value);
+}
+function Fortune (){
+    
+}
 function RandomInt (low,high)
 {
-    return Math.floor(Math.random()*(high-low+1)) +low
+    return Math.floor(Math.random()*(high-low)) +low
 }
 function Displayresult ()
 {
     Fortunenumber = RandomInt(0, 8);
     if (Fortunenumber == Fortune1) {
-        summary = SESSION_PLAYER_WINS;
-        playerWins++;
+        $("Output").innerHTML=displayFortune1;
     } else if (Fortunenumber == Fortune2) {
-        summary = SESSION_PLAYER_WINS;
-        playerWins++;
+        $("Output").innerHTML=displayFortune2;
     } else if (Fortunenumber == Fortune3) {
-        summary = SESSION_PLAYER_WINS;
-        playerWins++;
+        $("Output").innerHTML=displayFortune3;
     } else if (Fortunenumber == Fortune4) {
-        summary = SESSION_COMPUTER_WINS;
-        computerWins++;
+        $("Output").innerHTML=displayFortune4;
     } else if (Fortunenumber == Fortune5) {
-        summary = SESSION_COMPUTER_WINS;
-        computerWins++;
+        $("Output").innerHTML=displayFortune5;
     } else if (Fortunenumber == Fortune6) {
-        summary = SESSION_COMPUTER_WINS;
-        computerWins++;
+        $("Output").innerHTML=displayFortune6;
     }else if (Fortunenumber == Fortune7) {
-        summary = SESSION_COMPUTER_WINS;
-        computerWins++;
+        $("Output").innerHTML=displayFortune7;
     }
     else if (Fortunenumber == Fortune8) {
-        summary = SESSION_COMPUTER_WINS;
-        computerWins++;
+        $("Output").innerHTML=displayFortune8;
     }
+
 }
