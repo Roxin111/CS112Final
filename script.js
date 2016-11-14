@@ -21,16 +21,14 @@ const displayFortune8 = "Don’t just spend time. Invest it.";
 function $(value) {
     return document.getElementById(value);
 }
-function Fortune (){
-    
-}
+
 function RandomInt (low,high)
 {
     return Math.floor(Math.random()*(high-low)) +low
 }
-function Displayresult ()
+function DisplayResult()
 {
-    Fortunenumber = RandomInt(0, 8);
+    var Fortunenumber = RandomInt(0, 8);
     if (Fortunenumber == Fortune1) {
         $("Output").innerHTML=displayFortune1;
     } else if (Fortunenumber == Fortune2) {
@@ -45,8 +43,7 @@ function Displayresult ()
         $("Output").innerHTML=displayFortune6;
     }else if (Fortunenumber == Fortune7) {
         $("Output").innerHTML=displayFortune7;
-    }
-    else if (Fortunenumber == Fortune8) {
+    } else if (Fortunenumber == Fortune8) {
         $("Output").innerHTML=displayFortune8;
     }
 
