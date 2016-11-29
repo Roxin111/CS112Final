@@ -10,15 +10,27 @@ const Fortune6 = 5;
 const Fortune7 = 6;
 const Fortune8 = 7;
 
-const displayFortune1 = "";
-const displayFortune2 = "";
-const displayFortune3 = "";
-const displayFortune4 = "";
-const displayFortune5 = "";
-const displayFortune6 = "";
-const displayFortune7 = "";
-const displayFortune8 = "";
+var displayFortune1 = "";
+var displayFortune2 = "";
+var displayFortune3 = "";
+var displayFortune4 = "";
+var displayFortune5 = "";
+var displayFortune6 = "";
+var displayFortune7 = "";
+var displayFortune8 = "";
 
+var playername = "name";
+function createFortune(){
+    var pn;
+  pn =  localStorage.getItem("name");
+    displayFortune1 =
+}
+function save(){
+    localStorage.setItem("name",playername);
+}
+function clearLocal(){
+    localStorage.clear();
+}
 function $(value) {
     return document.getElementById(value);
 }
