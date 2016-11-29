@@ -23,7 +23,14 @@ var playername = "name";
 function createFortune(){
     var pn;
   pn =  localStorage.getItem("name");
-    displayFortune1 =
+    displayFortune1 = "You will have many good years of luck" + pn;
+    displayFortune2 = "You will do well during finals however, you will need to study first" + pn;
+    displayFortune3 = pn + "Many people talk about your good looks!";
+    displayFortune4 = pn + "You will have the fortune of traveling to many distant lands in your future";
+    displayFortune5 = "Find what you want to do in life, Then you will never work a day in your life" + pn;
+    displayFortune6 = pn + "Don't eat the last cookie in the cookie jar. Your mom won't be so happy!";
+    displayFortune7 = pn + "You will not be defeated so easily! Just don't forget your limits.";
+    displayFortune8 = "There are rumors that a great warrior has entered our lands. Their name is" + pn;
 }
 function save(){
     localStorage.setItem("name",playername);
